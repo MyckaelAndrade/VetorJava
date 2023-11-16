@@ -50,6 +50,33 @@ public class VetoresJava {
         for(int i = 0; i <= g.length-1; i++){
             System.out.print(g[i] + " ");
         }
+                System.out.println();
+
+        System.out.println("\n=====================\n");
+
+        //For int -> simplificando a maneira de criar um vetor com laço for
+        double r[] = {1.5, 2.3, -3.5, 4, 5.8};
+        for (double valor : r) {
+            System.out.print(valor + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=====================\n");
+        
+        //Pesquisar valor no vetor
+        int p[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int s = Arrays.binarySearch(p, 9);
+        System.out.println("O valor foi encontrado na seguinte posição: " + s);
+        
+        System.out.println("\n=====================\n");
+        
+        //Criar um vetor utilizando a função fill
+        int l[] = new int[10];
+        Arrays.fill(l, 0); //Criando vetor com valores especificos 
+        for(int valores:l){
+            System.out.print(valores + " ");
+        }
+        System.out.println();
     }
 
 }
